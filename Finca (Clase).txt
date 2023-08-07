@@ -1,0 +1,72 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package sistemaganadero;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author Sebastián
+ */
+public class Finca {
+    private String nombre;
+    private String ubicacion;
+    private String encargado;
+    private String cedulaEncargado;
+    private String telefonoEncargado;
+    private int cantidadPotreros;
+    private double tamanoTotal;
+    private int cantidadAnimales;
+    private List<Ganado> ganadoList;
+    private List<Potrero> potreroList;
+
+    public Finca(String nombre, String ubicacion, String encargado, String cedulaEncargado, String telefonoEncargado, int cantidadPotreros, double tamanoTotal, int cantidadAnimales) {
+        this.nombre = nombre;
+        this.ubicacion = ubicacion;
+        this.encargado = encargado;
+        this.cedulaEncargado = cedulaEncargado;
+        this.telefonoEncargado = telefonoEncargado;
+        this.cantidadPotreros = cantidadPotreros;
+        this.tamanoTotal = tamanoTotal;
+        this.cantidadAnimales = cantidadAnimales;
+        ganadoList = new ArrayList<>();
+        potreroList = new ArrayList<>();
+    }
+
+    public void agregarGanado(Ganado ganado) {
+        ganadoList.add(ganado);
+    }
+
+    public void agregarPotrero(Potrero potrero) {
+        potreroList.add(potrero);
+    }
+
+    public List<Ganado> getGanadoList() {
+        return ganadoList;
+    }
+
+    public List<Potrero> getPotreroList() {
+        return potreroList;
+    }
+
+    // Otros métodos para consultar información de la finca (opcional)
+
+    public String toString() {
+        return "Finca{" +
+                "nombre='" + nombre + '\'' +
+                ", ubicacion='" + ubicacion + '\'' +
+                ", encargado='" + encargado + '\'' +
+                ", cedulaEncargado='" + cedulaEncargado + '\'' +
+                ", telefonoEncargado='" + telefonoEncargado + '\'' +
+                ", cantidadPotreros=" + cantidadPotreros +
+                ", tamanoTotal=" + tamanoTotal +
+                ", cantidadAnimales=" + cantidadAnimales +
+                ", ganadoList=" + ganadoList +
+                ", potreroList=" + potreroList +
+                '}';
+    }
+}
+    

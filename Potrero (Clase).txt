@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package sistemaganadero;
+
+/**
+ *
+ * @author Sebastián
+ */
+public class Potrero {
+    private String codigo;
+    private String nombre;
+    private String estado;
+    private String fechaEntrada;
+    private String fechaSalida;
+    private int cantidadAnimales;
+    private boolean poseeAgua;
+    private String tipoTerreno;
+
+    public Potrero(String codigo, String nombre, String estado, String fechaEntrada, String fechaSalida, int cantidadAnimales, boolean poseeAgua, String tipoTerreno) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.estado = estado;
+        this.fechaEntrada = fechaEntrada;
+        this.fechaSalida = fechaSalida;
+        this.cantidadAnimales = cantidadAnimales;
+        this.poseeAgua = poseeAgua;
+        this.tipoTerreno = tipoTerreno;
+    }
+
+    // Getters y setters (opcional)
+
+    @Override
+    public String toString() {
+        return "Potrero{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", estado='" + estado + '\'' +
+                ", fechaEntrada='" + fechaEntrada + '\'' +
+                ", fechaSalida='" + fechaSalida + '\'' +
+                ", cantidadAnimales=" + cantidadAnimales +
+                ", poseeAgua=" + poseeAgua +
+                ", tipoTerreno='" + tipoTerreno + '\'' +
+                '}';
+    }
+}
+    

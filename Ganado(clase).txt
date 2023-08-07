@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package sistemaganadero;
+
+/**
+ *
+ * @author Sebastián
+ */
+public class Ganado {
+    private String codigo;
+    private String nombre;
+    private String fechaNacimiento;
+    private double ultimoPeso;
+    private char sexo;
+    private String raza;
+
+    public Ganado(String codigo, String nombre, String fechaNacimiento, double ultimoPeso, char sexo, String raza) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+        this.ultimoPeso = ultimoPeso;
+        this.sexo = sexo;
+        this.raza = raza;
+    }
+
+    // Getters y setters (opcional)
+
+    @Override
+    public String toString() {
+        return "Ganado{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                ", ultimoPeso=" + ultimoPeso +
+                ", sexo=" + sexo +
+                ", raza='" + raza + '\'' +
+                '}';
+    
+}
+    }
